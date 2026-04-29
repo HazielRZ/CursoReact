@@ -1,9 +1,18 @@
 @import "tailwindcss";
 @layer components {
-    .button1{
-        @apply px-4 py-2 bg-blue-300 text-white text-sm font-bold rounded-2xl;
+    .button1 {
+        @apply px-4 py-2 bg-blue-300 text-white text-sm font-bold rounded-2xl
+        active:translate-y-2  active:[box-shadow:0_0px_0_5_#1b6ff8,0_0px_0_5_#1b70f841]
+        active:border-b-0
+        transition-all duration-150 [box-shadow:0_8px_0_0_#1b6ff8,0_13px_0_0_#1b70f841]
+        border border-blue-400;
     }
-    .t1{
-        @apply text-black font-bold text-9xl;
+
+    .button1:hover {
+        @apply bg-blue-400 ;
+    }
+
+    .t1 {
+        @apply text-blue-100 font-bold text-9xl;
     }
 }

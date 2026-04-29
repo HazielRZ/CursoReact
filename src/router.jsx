@@ -9,8 +9,8 @@ export default function Router() {
         <BrowserRouter>
             <Routes>
                 <Route element={<AppLayout/>}>
-                    <Route path='/' element={<AppView />}/>
-                    <Route path='/otro' element={<div>Otra Vista Placeholder</div>}/>
+                    <Route path='/' element={<AppView/>}/>
+                    <Route path='/otro' element={<div>Otra Vista </div>}/>
                     <Route path='/parametro/:id' element={<ParamView/>}/>
                 </Route>
             </Routes>

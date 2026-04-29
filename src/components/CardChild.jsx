@@ -1,5 +1,5 @@
-export  default function CardChild({children, title}) {
-    return(
+export default function CardChild({children, title}) {
+    return (
         <div className="card">
             <div className='bg-green-100'>
                 <h3>{title}</h3>
